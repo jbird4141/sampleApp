@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements. See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership. The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the
+specific language governing permissions and limitations
+under the License.
+<link rel="stylesheet" href ="js/jquery.mobile-1.4.2.min.css" />
+<script src= "js/jquery.mobile-1.4.2.min.js"> </script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+   
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+        <link rel="stylesheet" href="mobiletheme22.css" />
+        <link rel="stylesheet" href="format.css" />
+		<!--<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />   -->
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+
+
+        <title>Hello World</title>
+    </head>
+   <div data-role="page" data-theme="a">
+    	<div data-role="header" data-theme="a">
+    		<a href="index.html" data-role="button" data-theme="a" data-icon="home" data-iconpos="notext" rel="external"></a>
+     		<h1>Hello World App</h1>
+     		<a href="navigation.html" data-role="button" data-theme="a" data-icon="grid" data-iconpos="notext"></a>
+     		
+     	</div> <!-- HEADER -->
+    
+    
+     <div data-role="content" data-theme="a">
+     	
+     	
+     	
+     	<ul class="sortList" data-role="listview" data-filter="true">
+     	<!--	<h1 class="nav-title">Restaurants</h1>
+     		<h5 class ="wait-title">Wait Time</h5>   -->
+     		
+     		<li data-role="list-divider" role="heading"><h1 class="nav-title">Restaurants</h1><button class="bSort" data-inline="true">Sort</button><h5 class ="wait-title">Wait Time</h5> </li>
+			<li><a href="#"><img src="img/nimbeaux.jpg"><h2 class ="rName">Nimbeaux's</h2><h5 class="wait-time">5min</h5></a></li>
+			<li><a href="#"><img src="img/eddies.jpg"><h3 class ="rName">Eddie's BBQ</h3><h5 class="wait-time">20min</h5></a></li>
+			<li><a href="#"><img src="img/bonefish.jpg"><h1 class = "rName"> Bonefish Grill</h1><h5 class="wait-time2">30min</h5></a></li>
+			<li><a href="#"><img src="img/fat-pats.jpg"><h1 class = "rName">Fat Pat's Bar and Grill</h1><h5 class="wait-time3">45min</h5></a></li>
+			<li><a href="#"><img src="img/brokenegg.jpg"><h1 class = "rName">Another Broken Egg</h1><h5 class="wait-time">15min</h5></a></li>
+			<li><a href="#"><img src="img/bluedog.jpg"><h1 class = "rName">Blue Dog Cafe</h1><h5 class="wait-time2">35min</h5></a></li>
+		</ul>
+     
+     	
+     	
+     
+     </div>
+    
+     <div data-role="footer" data-theme="a">
+     	<h2>All rights reserved.</h2>
+     </div>
+     
+     </div>  <!-- ------ --END PAGE -->
+     
+
+     
+    
+</html>
+
+
+<script>
+
+var list = {};
+
+$(".sortList li").each(function(index, value){
+     //* BUILD THE ARRAY **//
+     
+     list.push({name: nameValue, otherAttribute: otherValue});
+     
+});
+	
+	
+	
+</script>
