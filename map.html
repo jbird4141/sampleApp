@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Map Display</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+             <link rel="stylesheet" href="css/mobiletheme33.css"/>
+
+            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!-- /page -->
+        <div data-role="page" id="map-page">
+            <!-- /header -->
+            <div data-role="header">
+            	<a href="index.html" data-role="button" class= "ui-btn-active" data-ajax ="false" data-theme="a" data-icon="home" data-iconpos="notext"></a>
+                <h1>SwiftDiner</h1>
+                <a href="list.html" data-role="button" data-ajax ="false" data-theme="a" data-icon="search" data-iconpos="right">Search</a>
+
+                <a data-rel="back">Back</a>
+            </div>
+            <!-- /content -->
+            <div data-role="content" class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+                <div id="map_canvas" style="height:300px;"></div>
+            </div>
+            
+            <div data-role="footer" data-theme="a">
+     			<h2>All rights reserved.</h2>
+     		</div>
+
+        </div>
+    </body>
+</html>

@@ -28,16 +28,16 @@ under the License.
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
    
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-        <link rel="stylesheet" href="mobileTheme33.css" />
+        <link rel="stylesheet" href="css/mobileTheme33.css" />
    
 		
 		
-		<link rel="stylesheet" href="format.css" />
+		<link rel="stylesheet" href="css/format.css" />
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-		<script src="jquery.tinysort.min.js"></script>
-		<script src="jquery.jqmts.js"></script>    
+		<script src="js/jquery.tinysort.min.js"></script>
+		<script src="js/jquery.jqmts.js"></script>    
 		
 		
 		
@@ -45,16 +45,16 @@ under the License.
 
 
 
-        <title>Hello World</title>
+        <title>Info Page</title>
     </head>
     
     <body>
     
-   <div data-role="page" data-theme="a" id="page1">
+   <div data-role="page" data-theme="a" id="infoPage">
     	<div data-role="header" data-theme="a">
     		<a href="index.html" data-role="button"  data-ajax ="false" data-theme="a" data-icon="home" data-iconpos="notext"></a>
-     		<h1>Hello World App</h1>
-     		<a href="navigation.html" data-role="button" data-ajax ="false" data-theme="a" data-icon="search" data-iconpos="right">Search</a>
+     		<h1>Restaurant Info</h1>
+     		<a href="list.html" data-role="button" data-ajax ="false" data-theme="a" data-icon="search" data-iconpos="notext"></a>
      		
      	</div> <!-- HEADER -->
      	
@@ -62,7 +62,10 @@ under the License.
     
     
      	<div data-role="content" data-theme="a">
-     		<h2 id ="firstname">Nimbeaux's Restaurant</h2>
+     		<!--<h2 id ="firstname">Restaurant Info</h2> -->
+     		<div id="info">
+     			<!-- info gets put here -->
+     		</div>
      		
      	
      		
@@ -74,7 +77,7 @@ under the License.
      
      	</div>
     
-     	<div data-role="footer" data-theme="a">
+     	<div data-role="footer" data-theme="a" data-position="fixed">
      		<h2>All rights reserved.</h2>
      	</div>
      

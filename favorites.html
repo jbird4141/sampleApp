@@ -28,16 +28,17 @@ under the License.
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
    
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-        <link rel="stylesheet" href="css/format.css" />
         <link rel="stylesheet" href="css/mobileTheme33.min.css" />
    
 		
 		
-		
+		<link rel="stylesheet" href="css/format.css" />
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-
+		<script src="js/jquery.tinysort.min.js"></script>
+		<script src="js/jquery.jqmts.js"></script>   
+		<script src="js/funct.js"></script> 
 	
 		
 		
@@ -47,14 +48,14 @@ under the License.
 
 
 
-        <title>Home</title>
+        <title>Favorites</title>
     </head>
     
     <body>
     
-   <div data-role="page" data-theme="a" id="page1">
+   <div data-role="page" data-theme="a" id="favpage">
     	<div data-role="header" data-theme="a">
-    		<a href="index.html" data-role="button" class= "ui-btn-active" data-ajax ="false" data-theme="a" data-icon="home" data-iconpos="notext"></a>
+    		<a href="index.html" data-role="button"  data-ajax ="false" data-theme="a" data-icon="home" data-iconpos="notext"></a>
      		<h1>SwiftDiner</h1>
      		<a href="list.html" data-role="button" data-ajax ="false" data-theme="a" data-icon="search" data-iconpos="notext"></a>
      		
@@ -64,8 +65,14 @@ under the License.
     
     
      	<div data-role="content" data-theme="a">
+     		<h1 style="text-align: center">Favorites</h1> 
      		
-     		<p>Welcome to SwiftDiner!</p>
+     		<ul data-role="listview"  class="listAdd" id="sortlist">
+ 				<li data-role="list-divider" role="heading" data-sort-firstname="aaaaaaaaaaaa" data-sort-lastname="0"><h1 class="nav-title">Restaurants</h1><h5 class ="wait-title">Wait Time (minutes)</h5> </li>
+
+     		
+     		</ul>
+     		
      		
      		
      		
@@ -78,7 +85,7 @@ under the License.
      		<div data-role="navbar">
 					<ul>
 						<li><a href="mapintro.html" data-ajax="false">Map</a></li>
-						<li><a href="favorites.html" data-ajax="false">Favorites</a></li>
+						<li><a href="favorites.html" class ="ui-btn-active">Favorites</a></li>
 						
 					</ul>
 				</div><!-- /navbar -->
