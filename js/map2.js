@@ -8,6 +8,8 @@
                 var phone = new google.maps.LatLng(30.211718, -92.021452);
                 var nimCor = [30.187111, -92.011720];
                 var eddieCor = [30.162417, -91.992892];
+                var bonefishCor = [30.168957, -92.035878];
+                var fatpatCor = [30.183944, -92.072806];
 
             function initializeMapAndCalculateRoute(lat, lon)
             {
@@ -89,5 +91,9 @@
                     	initializeMapAndCalculateRoute(nimCor[0], nimCor[1]);
                     else if(localStorage.navTo === "3")
                     	initializeMapAndCalculateRoute(eddieCor[0], eddieCor[1]);
+                   	else if(localStorage.navTo === "4")
+                    	initializeMapAndCalculateRoute(bonefishCor[0], bonefishCor[1]);
+                    else if(localStorage.navTo === "5")
+                    	initializeMapAndCalculateRoute(fatpatCor[0], fatpatCor[1]);
                    
                 });
